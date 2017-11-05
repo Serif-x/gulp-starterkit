@@ -23,3 +23,11 @@ Now you can use these commands below to build source files
 - Watch `JavaScript` files and built  real time: `npm run watch:js`
 - Process images and copy to public directory: `npm run dist:img`
 - Copy libraries to public directory: `npm run copy:libs`
+
+## Contributing
+
+So glad to meet your points of view in code
+
+## License
+
+Licensed under the `MIT` license
