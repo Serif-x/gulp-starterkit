@@ -1,6 +1,6 @@
 # Gulp Starter Kit
 
-A starter kit for start a front-end project built by gulp
+A starter kit for starting a front-end project built by gulp
 
 ## Start
 

@@ -2,7 +2,7 @@
   "name": "gulp-starterkit",
   "version": "1.0.0",
   "title": "gulp-starterkit",
-  "description": "A starter kit for start a front-end project built by gulp",
+  "description": "A starter kit for starting a front-end project built by gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
