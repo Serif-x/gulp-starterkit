@@ -1,0 +1,28 @@
+{
+  "name": "gulp-starterkit",
+  "version": "1.0.0",
+  "title": "gulp-starterkit",
+  "description": "A starter kit for start a front-end project built by gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Serifx Xiao",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-preset-es2015": "latest",
+    "crypto-js": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-header": "latest",
+    "gulp-less": "latest",
+    "gulp-rename": "latest",
+    "gulp-strip-debug": "latest",
+    "gulp-uglify": "latest",
+    "pump": "latest",
+    "run-sequence": "latest"
+  }
+}

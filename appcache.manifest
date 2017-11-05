@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# Time: Sun Nov 05 2017 21:51:45 GMT+0800 (中国标准时间)
+
+CACHE:
+public/img/avatar.png
+
+NETWORK:
+*
+
+SETTINGS:
+prefer-online
+
+# hash: 7dc5dfb49bde1fb9a5a864056ee2100747a2109ff0dbccc114d7789ac0ced3bf

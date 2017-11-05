@@ -1,0 +1,15 @@
+/*!
+ * CitiGO
+ * 
+ * Version: 1.0.0
+ * 
+ * Copyright (c) 2017 Serifx Xiao
+ * http://blog.tiy.xyz
+ * 
+ * Released on: 2017/11/5 21:36
+ */
+.page {
+  background-color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
