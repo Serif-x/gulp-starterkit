@@ -1,8 +1,8 @@
 {
-  "name": "gulp-starterkit",
+  "name": "citigo",
   "version": "1.0.0",
-  "title": "gulp-starterkit",
-  "description": "A starter kit for starting a front-end project built by gulp",
+  "title": "CitiGO",
+  "description": "citigo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
     "gulp-clean-css": "latest",
     "gulp-header": "latest",
     "gulp-less": "latest",
+    "less-plugin-functions": "latest",
     "gulp-rename": "latest",
     "gulp-strip-debug": "latest",
     "gulp-uglify": "latest",

@@ -11,6 +11,7 @@ var $ = {
   
   /* CSS */
   less: require('gulp-less'),
+  lessPluginFunctions: require('less-plugin-functions'),
   minifyCss: require('gulp-clean-css'),
   autoprefixer: require('gulp-autoprefixer'),
   
@@ -37,7 +38,10 @@ var paths = {
 
 var sources = {
   js: paths.src.js + '**/*.js',
-  css: paths.src.css + '**/*.less',
+  css: [
+    paths.src.css + '**/*.less',
+    '!' + paths.src.css + '_*/*' // ignore dir started by '_'
+  ],
   img: paths.src.img + '**/*',
   libs: paths.src.libs + '**/*'
 };
@@ -77,7 +81,11 @@ var banner = [
 /* CSS */
 gulp.task('dist:css', function () {
   return gulp.src(sources.css)
-    .pipe($.less())
+    .pipe($.less({
+      plugins: [
+        new $.lessPluginFunctions, // require 'new' example
+      ],
+    }))
     .pipe($.autoprefixer(config.less.options))
     .pipe($.header(banner, {pkg: pkg}))
     .pipe(gulp.dest(paths.dist.css)) /* output source */
@@ -144,7 +152,7 @@ gulp.task('copy:libs', function () {
 
 /* Watch */
 gulp.task('watch:css', function () {
-  return gulp.watch(sources.css, [
+  return gulp.watch(sources.css[0], [
     'dist:css'
   ]);
 });

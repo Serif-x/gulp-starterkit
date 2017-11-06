@@ -1,4 +1,56 @@
-.page {
-  background-color: #fff;
-  transform: translate3d(0, 0, 0);
+@import "_inc/mixins";
+@import "_inc/vars";
+@import "_inc/base";
+@import "_inc/helper";
+@import "_inc/normalize";
+@import "_inc/icons";
+@import "_inc/utils";
+
+/* Common Settings
+   ========================================================================== */
+
+html,
+body {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
 }
+
+html {
+  font-size: @base-font; /* Root Size */
+}
+
+body {
+  font-size: px2rem(16px);
+  font-family: "PingFang SC", "Droid Sans", "Droid Sans Fallback", sans-serif;
+}
+
+a,
+img {
+  -webkit-touch-callout: none; // 禁止长按链接与图片弹出菜单
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+
+/* Layout
+   ========================================================================== */
+html,
+body {
+  height: 100%;
+}
+
+
+/* Something else
+   ========================================================================== */

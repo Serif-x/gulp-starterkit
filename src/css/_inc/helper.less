@@ -1,0 +1,363 @@
+
+/*!
+ * Helper Classes
+ *
+ * For minimal basic usage
+ *
+ * Author: Serifx Xiao <Serifx@outlook.com>
+ * Further changes: Serifx Xiao
+ * Date: 2015/11/13
+ * Version: 1.0.1
+ */
+
+
+/* ==========================================================================
+   Position
+   ========================================================================== */
+
+/*
+ * clearfix
+ */
+.clearfix { *zoom: 1; }
+.clearfix:before,
+.clearfix:after { content: ""; display: table; height: 0; line-height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+
+/*
+ * float
+ */
+.fl { float: left !important; _float: left; _display: inline; }
+.fr { float: right !important; _float: right; _display: inline; }
+.fn { float: none !important; }
+.cb { clear: both !important; }
+.cl { clear: left !important; }
+.cr { clear: right !important; }
+
+/*
+ * position
+ */
+.rel { position: relative !important; }
+
+.abs { position: absolute !important; }
+.abs-top { position: absolute !important; top: 0; }
+.abs-right { position: absolute !important; right: 0; }
+.abs-bottom { position: absolute !important; bottom: 0; }
+.abs-left { position: absolute !important; left: 0; }
+.abs-all { position: absolute !important; top: 0; left: 0; bottom: 0; right: 0; }
+
+.fixed { position: fixed !important; }
+.fixed-top { position: fixed !important; top: 0; }
+.fixed-right { position: fixed !important; right: 0; }
+.fixed-bottom { position: fixed !important; bottom: 0; }
+.fixed-left { position: fixed !important; left: 0; }
+.fixed-all { position: fixed !important; top: 0; left: 0; bottom: 0; right: 0; }
+
+/*
+ * display
+ */
+.hidden { display: none !important; visibility: hidden; }
+.invisible { visibility: hidden !important; }
+.none { display: none !important; }
+.block { display: block !important; }
+.inline { display: inline !important; }
+.inblock { display: inline-block !important; }
+.table { display: table !important; }
+
+/*
+ * align
+ */
+.vm { vertical-align: middle !important; }
+.vt { vertical-align: top !important; }
+.vbt { vertical-align: bottom !important; }
+.vbs { vertical-align: baseline !important; }
+
+/* ==========================================================================
+   Box Model
+   ========================================================================== */
+
+/*
+ * overflow
+ */
+.ovh { overflow: hidden !important; }
+.ovs { overflow: visible !important; }
+.ov-auto { overflow: auto !important; }
+.ovh-x { overflow-x: hidden !important; }
+.ovh-y { overflow-y: hidden !important; }
+
+/*
+ * box-sizing
+ */
+.box-border {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+.box-content {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/*
+ * width
+ */
+.w50 { width: 50px !important; }
+.w80 { width: 80px !important; }
+.w100 { width: 100px !important; }
+.w200 { width: 200px !important; }
+.w300 { width: 300px !important; }
+.w400 { width: 400px !important; }
+.w500 { width: 500px !important; }
+
+.w5p { width: 5% !important; }
+.w10p { width: 10% !important; }
+.w15p { width: 15% !important; }
+.w25p { width: 25% !important; }
+.w40p { width: 40% !important; }
+.w50p { width: 50% !important; }
+.w60p { width: 60% !important; }
+.w75p { width: 75% !important; }
+.w85p { width: 85% !important; }
+.w90p { width: 90% !important; }
+.w95p { width: 95% !important; }
+.w100p { width: 100% !important; }
+
+/*
+ * height
+ */
+.h50 { height: 50px !important; }
+.h80 { height: 80px !important; }
+.h100 { height: 100px !important; }
+.h200 { height: 200px !important; }
+.h300 { height: 300px !important; }
+.h400 { height: 400px !important; }
+.h500 { height: 500px !important; }
+
+.h50p { height: 50% !important; }
+.h100p { height: 100% !important; }
+
+/*
+ * margin
+ */
+.box-center { margin-left: auto; margin-right: auto; }
+.m0 { margin: 0 !important; }
+.m10 { margin: 10px !important; }
+.m15 { margin: 15px !important; }
+.m20 { margin: 20px !important; }
+
+.mt5 { margin-top: 5px !important; }
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt50 { margin-top: 50px !important; }
+.mt100 { margin-top: 100px !important; }
+
+.mr5 { margin-right: 5px !important; }
+.mr10 { margin-right: 10px !important; }
+.mr20 { margin-right: 20px !important; }
+.mr50 { margin-right: 50px !important; }
+.mr100 { margin-right: 100px !important; }
+
+.mb5 { margin-bottom: 5px !important; }
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb50 { margin-bottom: 50px !important; }
+.mb100 { margin-bottom: 100px !important; }
+
+.ml5 { margin-left: 5px !important; }
+.ml10 { margin-left: 10px !important; }
+.ml20 { margin-left: 20px !important; }
+.ml50 { margin-left: 50px !important; }
+.ml100 { margin-left: 100px !important; }
+
+.m1em { margin: 1em !important; }
+.m2em { margin: 2em !important; }
+.mt1em { margin-top: 1em !important; }
+.mt2em { margin-top: 2em !important; }
+.mr1em { margin-right: 1em !important; }
+.mr2em { margin-right: 2em !important; }
+.ml1em { margin-left: 1em !important; }
+.ml2em { margin-left: 2em !important; }
+.mb1em { margin-bottom: 1em !important; }
+.mb2em { margin-bottom: 2em !important; }
+
+/*
+ * padding
+ */
+.p0 { padding: 0 !important; }
+.p10 { padding: 10px !important; }
+.p15 { padding: 15px !important; }
+.p20 { padding: 20px !important; }
+
+.pt5 { padding-top: 5px !important; }
+.pt10 { padding-top: 10px !important; }
+.pt20 { padding-top: 20px !important; }
+.pt50 { padding-top: 50px !important; }
+.pt100 { padding-top: 100px !important; }
+
+.pr5 { padding-right: 5px !important; }
+.pr10 { padding-right: 10px !important; }
+.pr20 { padding-right: 20px !important; }
+.pr50 { padding-right: 50px !important; }
+.pr100 { padding-right: 100px !important; }
+
+.pb5 { padding-bottom: 5px !important; }
+.pb10 { padding-bottom: 10px !important; }
+.pb20 { padding-bottom: 20px !important; }
+.pb50 { padding-bottom: 50px !important; }
+.pb100 { padding-bottom: 100px !important; }
+
+.pl5 { padding-left: 5px !important; }
+.pl10 { padding-left: 10px !important; }
+.pl20 { padding-left: 20px !important; }
+.pl50 { padding-left: 50px !important; }
+.pl100 { padding-left: 100px !important; }
+
+.p1em { padding: 1em !important; }
+.p2em { padding: 2em !important; }
+.pt1em { padding-top: 1em !important; }
+.pt2em { padding-top: 2em !important; }
+.pr1em { padding-right: 1em !important; }
+.pr2em { padding-right: 2em !important; }
+.pl1em { padding-left: 1em !important; }
+.pl2em { padding-left: 2em !important; }
+.pb1em { padding-bottom: 1em !important; }
+.pb2em { padding-bottom: 2em !important; }
+
+
+/* ==========================================================================
+   Text and Font
+   ========================================================================== */
+
+/*
+ * text
+ */
+.txt-l { text-align: left !important; }
+.txt-c { text-align: center !important; }
+.txt-r { text-align: right !important; }
+.notxt { text-align: left; text-indent: -9999px !important; line-height: 0; }
+
+/*
+ * font
+ */
+.f10 { font-size: 10px !important; }
+.f12 { font-size: 12px !important; }
+.f13 { font-size: 13px !important; }
+.f14 { font-size: 14px !important; }
+.f16 { font-size: 16px !important; }
+.f18 { font-size: 18px !important; }
+.f20 { font-size: 20px !important; }
+.f26 { font-size: 26px !important; }
+.f28 { font-size: 28px !important; }
+.f30 { font-size: 30px !important; }
+
+.f1em { font-size: 1em !important; }
+.f2em { font-size: 2em !important; }
+
+/*
+ * line-height
+ */
+.lh1 { line-height: 1em !important; }
+.lh1_5 { line-height: 1.5em !important; }
+.lh2 { line-height: 2em !important; }
+
+
+/* ==========================================================================
+   Decoration
+   ========================================================================== */
+
+/*
+ * border
+ */
+.bd { border: 1px solid #000 !important; }
+.bd-t { border-top-width: 1px !important; }
+.bd-r { border-right-width: 1px !important; }
+.bd-b { border-bottom-width: 1px !important; }
+.bd-l { border-left-width: 1px !important; }
+
+.bdn { border: none !important; }
+.bdn-t { border-top: none !important; }
+.bdn-r { border-right: none !important; }
+.bdn-b { border-bottom: none !important; }
+.bdn-l { border-left: none !important; }
+
+/*
+ * background
+ */
+.nobg { background: none !important; }
+.bg-white { background-color: #fff !important; }
+.bg-black { background-color: #000 !important; }
+.bg-red { background-color: #f00 !important; }
+.bg-green { background-color: #0f0 !important; }
+.bg-blue { background-color: #00f !important; }
+
+/*
+ * color
+ */
+.txt-white { color: #fff !important; }
+.txt-black { color: #000 !important; }
+.txt-red { color: #f00 !important; }
+.txt-green { color: #0f0 !important; }
+.txt-blue { color: #00f !important; }
+
+
+/* ==========================================================================
+   other
+   ========================================================================== */
+
+/*
+ * Prevent callout
+ */
+.nocallout { -webkit-touch-callout: none; }
+.pressed { background-color: rgba(0, 0, 0, 0.7); }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+.gifhidden { position: absolute; left: -100%; }
+
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
+}
+.ir br { display: none; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
