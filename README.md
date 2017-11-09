@@ -4,13 +4,19 @@ A starter kit for starting a front-end project built by gulp
 
 ## Start
 
-First you need to have gulp-cli which you should install globally
+First you need to clone this repo to your working directory
+
+```
+git clone https://github.com/Serif-x/gulp-starterkit.git
+```
+
+Then you need to have gulp-cli which you should install globally
 
 ```
 $ npm install --global gulp
 ```
 
-Then install all dependencies, in repo's root
+Finally install all dependencies, in directory's root
 
 ```
 $ npm install
@@ -26,7 +32,7 @@ Now you can use these commands below to build source files
 
 ## Contributing
 
-So glad to meet your points of view in code
+So glad to meet your point of view in code
 
 ## License
 
