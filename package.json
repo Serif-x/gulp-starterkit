@@ -1,8 +1,8 @@
 {
-  "name": "citigo",
+  "name": "gulp-starterkit",
   "version": "1.0.0",
-  "title": "CitiGO",
-  "description": "citigo",
+  "title": "gulp-starterkit",
+  "description": "A starter kit for starting a front-end project built by gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
